@@ -51,6 +51,33 @@ p {
   /* padding-bottom: .4rem; */
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 24px 48px 24px 48px;
+  background-color: #0d0c10;
+  z-index: 99;
+  box-sizing: border-box;
+}
+
+.btn {
+  border-radius: 999px;
+  padding: 10px 20px;
+  background-color: #182230;
+  border: 1px solid #262f3c;
+  color: var(--color-primary);
+}
+
+.logo {
+  height: 19px;
+}
+
 /* hero */
 
 .hero {
@@ -61,6 +88,7 @@ p {
   height: 380px;
   align-content: center;
   align-items: self-end;
+  width: 1144px;
 }
 
 .potrait {
@@ -70,8 +98,8 @@ p {
 
 .right-content {
   display: flex;
-  justify-content: space-between;
-  gap: 24px;
+  justify-content: right;
+  gap: 48px;
   padding: 0;
   margin: 0;
 }
@@ -95,7 +123,7 @@ a:hover {
 
 @media screen and (max-width: 1280px) {
   body {
-    margin: 90px 48px 50px 48px;
+    margin: 0px 48px 50px 48px;
   }
 
   .hero {
@@ -105,11 +133,12 @@ a:hover {
     height: 380px;
     align-content: center;
     align-items: self-end;
+    padding-top: 90px;
   }
 
   .right-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     gap: 48px;
     padding: 0;
     margin: 0;
@@ -120,7 +149,7 @@ a:hover {
 
 @media screen and (max-width: 1024px) {
   body {
-    margin: 90px 48px 50px 48px;
+    margin: 90 48px 50px 48px;
   }
 
   .hero {
@@ -131,6 +160,7 @@ a:hover {
     height: 380px;
     align-content: center;
     align-items: self-end;
+    padding-top: 90px;
   }
 
   .right-content {
@@ -146,7 +176,7 @@ a:hover {
 
 @media screen and (max-width: 630px) {
   body {
-    margin: 120px 16px 50px 16px;
+    margin: 90px 16px 50px 16px;
   }
 
   .hero {
@@ -156,6 +186,7 @@ a:hover {
     grid-template-rows: 1fr;
     height: 380px;
     row-gap: 48px;
+    padding-top: 120px;
   }
 
   .right-content {
