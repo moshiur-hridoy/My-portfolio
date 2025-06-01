@@ -89,7 +89,12 @@ header {
   height: 380px;
   align-content: center;
   align-items: self-end;
-  width: 1144px;
+  max-width: 1144px;
+  width: 100%;
+}
+
+.my-description {
+  max-width: 465px;
 }
 
 .potrait {
@@ -146,23 +151,26 @@ a:hover {
   }
 }
 
+
 /* for brakepoint 1024px */
 
 @media screen and (max-width: 1024px) {
   body {
-    margin: 90 48px 50px 48px;
+    margin: 90px 48px 50px 48px;
   }
 
   .hero {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 2fr;
+    /* grid-template-rows: .5fr; */
+    grid-template-columns: 1fr;
     row-gap: 48px;
     height: 380px;
     align-content: center;
     align-items: self-end;
     padding-top: 90px;
+    
   }
+
 
   .right-content {
     display: flex;
@@ -189,6 +197,7 @@ a:hover {
     row-gap: 48px;
     padding-top: 120px;
   }
+  
 
   .right-content {
     display: flex;
