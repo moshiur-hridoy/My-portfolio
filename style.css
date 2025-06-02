@@ -180,3 +180,67 @@ a:hover {
     margin-bottom: 2.4rem;
   }
 }
+
+/* case-studies */
+
+.case-study-thumbnail {
+  border-radius: 1.6rem;
+  width: 100%;
+}
+
+.case-study {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+  max-width: 1144px;
+  padding-top: 24px;
+}
+
+.case-studies {
+  padding: 24px 48px 90px 48px;
+}
+
+/* for brakepoint 1024px */
+
+@media screen and (max-width: 1024px) {
+  .case-study-thumbnail {
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+  .case-study {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    max-width: 1144px;
+    padding-top: 24px;
+  }
+
+  .case-studies {
+    padding: 24px 48px 90px 48px;
+  }
+}
+
+/* for brakepoint 630px */
+
+@media screen and (max-width: 630px) {
+  .case-study-thumbnail {
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+  .case-study {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    max-width: 1144px;
+    padding-top: 20px;
+  }
+
+  .case-studies {
+    padding: 56px 16px 90px 16px;
+  }
+}
