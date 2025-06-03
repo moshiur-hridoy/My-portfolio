@@ -38,6 +38,7 @@ h2 {
   color: var(--color-secondary);
   font-weight: 400;
   margin: 0;
+  padding-bottom: 2.4rem;
 }
 
 p {
@@ -180,6 +181,7 @@ a:hover {
     margin-bottom: 2.4rem;
   }
 }
+
 /* case-studies */
 
 .case-study-thumbnail {
@@ -193,7 +195,6 @@ a:hover {
   grid-template-rows: 1fr 1fr;
   gap: 24px;
   max-width: 1144px;
-  padding-top: 24px;
 }
 
 .case-studies {
@@ -214,7 +215,6 @@ a:hover {
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     max-width: 1144px;
-    padding-top: 24px;
   }
 
   .case-studies {
@@ -236,10 +236,67 @@ a:hover {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 16px;
     max-width: 1144px;
-    padding-top: 20px;
   }
 
   .case-studies {
     padding: 56px 16px 90px 16px;
   }
+}
+
+/* portfolio sections */
+
+.project-link,
+.experience-link {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.side-projects,
+.experience,
+.social-links {
+  max-width: 1144px;
+  padding: 90px 48px 20px 48px;
+  align-content: center;
+}
+
+.designation {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* for brakepoint 630px */
+
+@media screen and (max-width: 630px) {
+  .project-link,
+  .experience-link,
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+    padding-bottom: 16px;
+  }
+
+  .side-projects,
+  .experience,
+  .social-links {
+    max-width: 1144px;
+    padding: 64px 16px 20px 16px;
+  }
+}
+
+footer {
+  align-content: center;
+  height: 130px;
+  text-align: center;
+  border-top: 1px solid #202020;
+  margin-top: 42px;
 }
